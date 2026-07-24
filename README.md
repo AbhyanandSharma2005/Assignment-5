@@ -170,9 +170,3 @@ kaggle datasets download -d pavansubhasht/ibm-hr-analytics-attrition-dataset
 # https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset
 ```
 Place `WA_Fn-UseC_-HR-Employee-Attrition.csv` in the project root and rename to `emp_attrition.csv` or update the filename in `Assignment-5.py`.
-
-## 📄 Submission Details
-- **Assignment**: Employee Attrition Prediction
-- **Deadline**: 27 July 2026, 11:59 PM IST
-- **Total Marks**: 10 Marks
-- **Tasks**: 5 Tasks covering Data Understanding, Preprocessing, Model Development, Evaluation, and Conclusion
