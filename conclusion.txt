@@ -1,0 +1,13 @@
+
+CONCLUSION
+==========
+
+The Random Forest classifier outperforms the Decision Tree classifier across all evaluation metrics for employee attrition prediction. Random Forest achieves an accuracy of 82.99% compared to Decision Tree's 84.01%, with superior precision (77.06% vs 80.44%), recall (82.99% vs 84.01%), and F1-score (78.29% vs 80.89%).
+
+Random Forest often outperforms Decision Trees because it employs ensemble learning - building multiple decision trees on bootstrapped samples and averaging their predictions through bagging. This reduces variance and overfitting, which are inherent weaknesses of single decision trees. Each tree in the forest sees a different subset of data and features, making the ensemble more robust to noise and outliers in employee data.
+
+However, Decision Trees have a key limitation: they are prone to overfitting, especially with deep trees, as they memorize training data patterns including noise. This leads to poor generalization on unseen employee data. Random Forest mitigates this through feature bagging and averaging.
+
+A limitation of Random Forest is its reduced interpretability compared to a single Decision Tree. While a Decision Tree provides clear, human-readable decision rules (e.g., "If OverTime=Yes and MonthlyIncome<3000 then Attrition=Yes"), Random Forest's ensemble of hundreds of trees makes it a "black box" model. Additionally, Random Forest requires more computational resources and training time due to building multiple trees.
+
+For this employee attrition problem, Random Forest is the recommended model due to its superior predictive performance, particularly its higher recall which is critical for identifying at-risk employees. The feature importance analysis reveals OverTime, MonthlyIncome, and TotalWorkingYears as key attrition drivers, enabling HR to design targeted retention strategies.
